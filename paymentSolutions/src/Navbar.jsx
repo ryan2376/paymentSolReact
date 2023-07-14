@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Navbar() {
+    
     return(
         <section>
             <nav className="navbar">
@@ -9,7 +10,7 @@ export default function Navbar() {
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Services</li>
-                <li>Admin</li>
+                <li id="admin">Admin</li>
             </ul> 
             </nav>
         </section>
