@@ -1,42 +1,65 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar{
+    background-color: #F0BC03;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.brand-name{
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 30px;
 }
 
-.card {
-  padding: 2em;
+.list-items{
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    margin-right: 20px;
+    font-size: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.list-items > li{
+    padding: 20px 20px 20px 20px;
+    font-weight: bold;
+}
+
+/* .body-img{
+    position: relative;
+    float: right;
+    top: 100px;
+
+} */
+
+#footer{
+    margin-top: auto;
+    position: absolute;
+    width: 100%;
+    /* height: auto; */
+    bottom: 0;
+    background: #FCDD36;
+    /* height: 2.5rem; */
+    
+}
+
+.social-icons{
+    float: right;
+    margin-right: 20px;
+}
+
+.social-icons img{
+    padding: 20px;
 }
