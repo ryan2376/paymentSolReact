@@ -3,6 +3,7 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import './App.css'
 import AboutUs from './AboutUs.jsx'
 import App from './App'
+import CreateAccount from './CreateAccount'
 
 const router = createBrowserRouter([
   // createRoutesFromElements(
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     path:"/",
     element: <App />
   },
+  {
+    path:"Create",
+    element:<CreateAccount />
+  }
   ]);
 
 export default function Routess({routes}) {
