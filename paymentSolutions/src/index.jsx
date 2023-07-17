@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App.jsx'
 import './index.css'
 import "./Behaviors.js"
+import Routess from './Routess.jsx'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<Routess />, document.getElementById('root'))
   
