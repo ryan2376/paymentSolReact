@@ -12,7 +12,7 @@ export default function Navbar() {
             <ul className="list-items">
                 <li>Home</li>
                 <li>
-                    <Link to="/AboutUs">About Us</Link></li>
+                    <Link id="About" to="/AboutUs">About Us</Link></li>
                 <li>Services</li>
                 <li id="admin">Admin</li>
             </ul> 

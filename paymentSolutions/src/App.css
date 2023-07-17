@@ -36,6 +36,11 @@
     padding: 20px 20px 20px 20px;
     font-weight: bold;
   }
+
+  #About{
+    text-decoration: none;
+    color: black;
+  }
   
   /* .container {
     display: flex;
