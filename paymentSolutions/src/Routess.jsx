@@ -4,6 +4,8 @@ import './App.css'
 import AboutUs from './AboutUs.jsx'
 import App from './App'
 import CreateAccount from './CreateAccount'
+import Admin from './Admin'
+import User from './User'
 
 const router = createBrowserRouter([
   // createRoutesFromElements(
@@ -17,14 +19,27 @@ const router = createBrowserRouter([
     path: "AboutUs",
     element:<AboutUs />
   },
+
   {
     path:"/",
     element: <App />
   },
+
   {
     path:"Create",
     element:<CreateAccount />
-  }
+  },
+
+  {
+    path:"Admin",
+    element:<Admin />
+  },
+
+  {
+    path:"User",
+    element:<User />
+  },
+
   ]);
 
 export default function Routess({routes}) {
