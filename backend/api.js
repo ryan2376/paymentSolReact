@@ -3,12 +3,15 @@ const express = require("express");
 const router = express.Router();
 const db = require("./db");
 
+e.preventDefault();
+  console.log("name:", Name);
+  console.log("password:", password);
 // Login route
 router.post("/login", (req, res) => {
   const { name, password } = req.body;
 
-  // Query the 'credentials' table for the provided username and password
-  const query = `SELECT * FROM credentials WHERE name = ? AND password = ?`;
+  // Query the 'credentials' table for the provided Name and Password
+  const query = "SELECT * FROM credentials WHERE name = ? AND password = ?";
   db.query(query, [name, password], (err, result) => {
     if (err) {
       console.error("Error executing MySQL query:", err);
@@ -25,5 +28,24 @@ router.post("/login", (req, res) => {
     }
   });
 });
+
+// Registration route
+router.post('/register', (req, res) => {
+  const { name, phone, password } = req.body;
+
+  // Insert user data into the 'users' table
+  const query = 'INSERT INTO credentials (name, phone, password) VALUES (?, ?, ?)';
+  db.query(query, [name, phone, password], (err, result) => {
+    if (err) {
+      console.error('Error executing MySQL query:', err);
+      res.status(500).json({ message: 'Server error' });
+      return;
+    }
+
+    // Registration successful
+    res.json({ message: 'Registration successful' });
+  });
+});
+
 
 module.exports = router;

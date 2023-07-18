@@ -1,10 +1,9 @@
-// backend/db.js
 const mysql = require("mysql");
 
 // Replace <your-mysql-config> with your MySQL connection configuration
 const connection = mysql.createConnection({
   host: "localhost",
-  username: "root",
+  user: "root",
   password: "",
   database: "paymentmethods",
 });
