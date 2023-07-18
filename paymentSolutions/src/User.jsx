@@ -60,7 +60,7 @@ export default function User() {
           </div>
           <div className="form-group">
             <label htmlFor="password">Amount</label>
-            <input type="password" id="amount-user" name="password" placeholder="Enter the amount" />
+            <input type="text" id="amount-user" name="password" placeholder="Enter the amount" />
           </div>
           <button type="submit">Make Payment</button>
         </form>
