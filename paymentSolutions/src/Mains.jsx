@@ -9,8 +9,8 @@ export default function Mains() {
       <div className="login-form">
         <form>
           <div className="form-group">
-            <label htmlFor="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" />
+            <label htmlFor="name">Username</label>
+            <input type="text" id="name" name="name" placeholder="Enter your username" />
           </div>
           <div className="form-group">
             <label htmlFor="password">Password</label>
