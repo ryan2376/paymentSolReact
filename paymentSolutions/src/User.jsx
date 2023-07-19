@@ -20,7 +20,7 @@ export default function User() {
         <nav className="navbar">
           <p className="brand-name">CHAMA</p>
           <ul className="list-items">
-            <li>Home</li>
+          <li> <Link id="Home" to="/">Home</Link> </li>
             <li>
               <Link id="About" to="/AboutUs">About Us</Link>
             </li>

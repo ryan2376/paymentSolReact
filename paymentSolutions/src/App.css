@@ -3,7 +3,7 @@
   }
   
   body {
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -93,6 +93,11 @@
   }
 
   #About{
+    text-decoration: none;
+    color: black;
+  }
+
+  #Home{
     text-decoration: none;
     color: black;
   }
@@ -304,4 +309,53 @@
   .admin-buttons button:hover {
     background-color: #FFD443;
   }
+
+
+  /* Admin Dashboard styles */
+.admin-dashboard {
+  display: flex;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.left-sidebar {
+  width: 250px;
+  background-color: #40BAD1; /* Sidebar background color */
+  padding: 20px;
+}
+
+.left-sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-sidebar li {
+  margin-bottom: 15px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 6 columns */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #40BAD1; /* Grid item background color */
+  padding: 20px;
+  border: 1px solid #dddddd; /* Grid item border */
+  border-radius: 8px; /* Grid item border radius */
+}
+
+.grid-item > img {
+  width: 30px;
+  height: 30px;
+}
 

@@ -6,6 +6,7 @@ import App from './App'
 import CreateAccount from './CreateAccount'
 import Admin from './Admin'
 import User from './User'
+import AdminDash from './AdminDash'
 
 const router = createBrowserRouter([
   // createRoutesFromElements(
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path:"User",
     element:<User />
+  },
+  {
+    path:"AdminDash",
+    element:<AdminDash />
   },
 
   ]);
