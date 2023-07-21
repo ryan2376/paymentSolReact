@@ -64,7 +64,7 @@ export default function User() {
           </div>
           <button type="submit">Make Payment</button>
         </form>
-        <img className="bg-image" src={bgimg} alt="Background" />
+        {/* <img className="bg-image" src={bgimg} alt="Background" /> */}
       </div>
       <Footer />
     </>

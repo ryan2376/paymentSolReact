@@ -3,10 +3,15 @@
   }
   
   body {
+    background-color: bisque;
+    background-image: url('./assets/bgimgnobg.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    margin: 0;
     max-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0;
     font-family: 'Work Sans', sans-serif;
   }
   
@@ -221,10 +226,11 @@
 
 
   #footer {
-    margin-top: 100%;
+    /* margin-top: 100%; */
     background: #FCDD36;
     padding: 20px;
     text-align: center;
+    margin-top: 40%;
   }
   
   .social-icons img {

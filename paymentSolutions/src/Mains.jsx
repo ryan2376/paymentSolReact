@@ -49,7 +49,7 @@ export default function Mains() {
           </div>
           <button type="submit">Log In</button>
         </form>
-        <img className="bg-image" src={bgimg} alt="Background" />
+        {/* <img className="bg-image" src={bgimg} alt="Background" /> */}
       </div>
       <div className="topics">
         <h1>About Us</h1>
